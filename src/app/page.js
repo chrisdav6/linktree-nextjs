@@ -15,10 +15,12 @@ export default function Home() {
       />
       <h1 className='font-bold mt-4 text-xl mb-8 text-white'>{data.name}</h1>
 
+      {/* Linktree Links */}
       {data.links.map((link) => (
         <LinkCard key={link.href} {...link} />
       ))}
 
+      {/* Social Links */}
       <div className='flex gap-2 text-white text-2xl mt-6'>
         {data.socials.map((icon) => {
           if (icon.href.includes('twitter')) {
