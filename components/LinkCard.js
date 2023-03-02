@@ -5,7 +5,7 @@ const LinkCard = ({ href, title, image }) => {
     <a
       href={href}
       target='_blank'
-      className='flex items-center w-full p-1 rounded-md hover:scale-105 transition-all border bg-gray-100 mb-3'
+      className='flex items-center w-full p-1 rounded-md hover:scale-105 transition-all border bg-gray-100 mb-3 max-w-3xl'
     >
       <div className='flex items-center w-full'>
         <div className='w-10 h-10'>
