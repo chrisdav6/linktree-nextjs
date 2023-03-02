@@ -1,9 +1,10 @@
 import Image from 'next/image';
-import data from '../../data.json';
 import LinkCard from '../../components/LinkCard';
 import { FaTwitter, FaGithub } from 'react-icons/fa';
+import { get } from '@vercel/edge-config';
 
-export default function Home() {
+export default async function Home() {
+  const data = await get('linktree');
   return (
     <div className='flex flex-col items-center mx-auto mt-16 px-16'>
       <Image
